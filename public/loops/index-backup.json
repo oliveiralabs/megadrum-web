@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Electric Piano Money",
+    "path": "OS_VV2_80_electric_piano_chords_money"
+  },
+  {
+    "name": "RnB Guitar",
+    "path": "RMG_rnbguitar_90BPM_Cminor_2_"
+  },
+  {
+    "name": "Guitar Chasing",
+    "path": "SC_NG_150_guitar_nylon_ensemble_arrangement_chasing_full_Cmin"
+  },
+  {
+    "name": "Guitar Presqueisle",
+    "path": "SC_NG_80_guitar_nylon_ensemble_arrangement_presqueisle_full_Gbmaj"
+  },
+  {
+    "name": "Piano Gospel",
+    "path": "SD_CW_140_piano_chords_gospel_path_Dmin"
+  },
+  {
+    "name": "Guitar Loop Clean",
+    "path": "SK_guitar_loop_clean_aspect_128_D"
+  },
+  {
+    "name": "Melodic Stack Soul",
+    "path": "SO_VS_137_melodic_stack_lastlight_full_soul_Cmin"
+  },
+  {
+    "name": "Melodic Stack Blues",
+    "path": "SO_VS_85_melodic_stack_notread_full_blues_12_bars_Fmin"
+  },
+  {
+    "name": "Guitar Clean Soul",
+    "path": "SP_MN_122_guitar_electric_clean_chords_clean_soul_Emaj"
+  },
+  {
+    "name": "Guitar Palm Mutes",
+    "path": "SP_MN_122_guitar_electric_clean_chords_palm_mutes_Emaj"
+  }
+]
