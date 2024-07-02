@@ -1,7 +1,43 @@
 [
   {
+    "name": "Abstract Heart",
+    "path": "Abstract Heart"
+  },
+  {
+    "name": "Melodic Stack Spanishtown",
+    "path": "DIA_LIB_70_melodic_stack_full_spanishtown_Gmin"
+  },
+  {
+    "name": "Electric Bass Commodore",
+    "path": "DSC_EDB_115_electric_bass_loop_commodore_Dmin"
+  },
+  {
+    "name": "Electric Bass Simple",
+    "path": "DSC_EDB_115_electric_bass_loop_simple_Dmin"
+  },
+  {
+    "name": "Laidback Miracle",
+    "path": "Laidback Miracle"
+  },
+  {
+    "name": "Mystic Sugar",
+    "path": "Mystic Sugar"
+  },
+  {
+    "name": "Often Bloom",
+    "path": "Occasionally Often Bloom"
+  },
+  {
     "name": "Electric Piano Money",
     "path": "OS_VV2_80_electric_piano_chords_money"
+  },
+  {
+    "name": "Planet Things",
+    "path": "Planet Things"
+  },
+  {
+    "name": "Rhythmic No",
+    "path": "Rhythmic No"
   },
   {
     "name": "RnB Guitar",
@@ -24,6 +60,10 @@
     "path": "SK_guitar_loop_clean_aspect_128_D"
   },
   {
+    "name": "Smart Year",
+    "path": "Smart Like Year"
+  },
+  {
     "name": "Melodic Stack Soul",
     "path": "SO_VS_137_melodic_stack_lastlight_full_soul_Cmin"
   },
@@ -38,5 +78,13 @@
   {
     "name": "Guitar Palm Mutes",
     "path": "SP_MN_122_guitar_electric_clean_chords_palm_mutes_Emaj"
+  },
+  {
+    "name": "Songstarter Badboy",
+    "path": "SS_IR_65_songstarter_rhythm_badboy_Amin"
+  },
+  {
+    "name": "Songstarter Skanks",
+    "path": "SS_IR_85_songstarter_skanks_rizzla_Cmin"
   }
 ]
