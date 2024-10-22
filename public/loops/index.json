@@ -4,15 +4,15 @@
     "path": "Abstract Heart"
   },
   {
-    "name": "Melodic Stack Spanishtown",
+    "name": "Stack Spanishtown",
     "path": "DIA_LIB_70_melodic_stack_full_spanishtown_Gmin"
   },
   {
-    "name": "Electric Bass Commodore",
+    "name": "Bass Commodore",
     "path": "DSC_EDB_115_electric_bass_loop_commodore_Dmin"
   },
   {
-    "name": "Electric Bass Simple",
+    "name": "Electric Bass",
     "path": "DSC_EDB_115_electric_bass_loop_simple_Dmin"
   },
   {
@@ -28,7 +28,7 @@
     "path": "Occasionally Often Bloom"
   },
   {
-    "name": "Electric Piano Money",
+    "name": "Piano Money",
     "path": "OS_VV2_80_electric_piano_chords_money"
   },
   {
@@ -56,7 +56,7 @@
     "path": "SD_CW_140_piano_chords_gospel_path_Dmin"
   },
   {
-    "name": "Guitar Loop Clean",
+    "name": "Guitar Loop",
     "path": "SK_guitar_loop_clean_aspect_128_D"
   },
   {
@@ -64,19 +64,19 @@
     "path": "Smart Like Year"
   },
   {
-    "name": "Melodic Stack Soul",
+    "name": "Melodic Soul",
     "path": "SO_VS_137_melodic_stack_lastlight_full_soul_Cmin"
   },
   {
-    "name": "Melodic Stack Blues",
+    "name": "Melodic Blues",
     "path": "SO_VS_85_melodic_stack_notread_full_blues_12_bars_Fmin"
   },
   {
-    "name": "Guitar Clean Soul",
+    "name": "Guitar Soul",
     "path": "SP_MN_122_guitar_electric_clean_chords_clean_soul_Emaj"
   },
   {
-    "name": "Guitar Palm Mutes",
+    "name": "Palm Mutes",
     "path": "SP_MN_122_guitar_electric_clean_chords_palm_mutes_Emaj"
   },
   {
@@ -90,5 +90,9 @@
   {
     "name": "Spacey Groove",
     "path": "Spacey Groove"
+  },
+  {
+    "name": "Rock",
+    "path": "Rock"
   }
 ]
