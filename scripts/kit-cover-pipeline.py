@@ -28,7 +28,24 @@ except ImportError as error:  # pragma: no cover - actionable CLI error
 
 
 ROOT = Path(__file__).resolve().parent.parent
-WORKSPACE = ROOT.parent
+WORKSPACE_CANDIDATES = (
+    ROOT.parent,
+    ROOT.parent / "oliveiralabs-github",
+)
+WORKSPACE = Path(
+    os.environ.get(
+        "MEGADRUM_KITS_WORKSPACE",
+        next(
+            (
+                str(candidate)
+                for candidate in WORKSPACE_CANDIDATES
+                if (candidate / "megadrum-kits").is_dir()
+                and (candidate / "megadrum-kits-premium").is_dir()
+            ),
+            str(ROOT.parent),
+        ),
+    )
+)
 DEFAULT_CATALOG = ROOT / "data/source/supabase-kits.json"
 DEFAULT_FREE_ROOT = WORKSPACE / "megadrum-kits"
 DEFAULT_PREMIUM_ROOT = WORKSPACE / "megadrum-kits-premium"

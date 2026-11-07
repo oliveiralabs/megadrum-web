@@ -1,4 +1,5 @@
 import { execFile } from "node:child_process";
+import { existsSync } from "node:fs";
 import { access, mkdir, stat } from "node:fs/promises";
 import path from "node:path";
 import { promisify } from "node:util";
@@ -6,6 +7,17 @@ import { fileURLToPath } from "node:url";
 
 const execFileAsync = promisify(execFile);
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const workspaceCandidates = [
+  path.resolve(repoRoot, ".."),
+  path.resolve(repoRoot, "../oliveiralabs-github"),
+];
+const kitsWorkspace = process.env.MEGADRUM_KITS_WORKSPACE
+  ? path.resolve(process.env.MEGADRUM_KITS_WORKSPACE)
+  : workspaceCandidates.find(
+      (candidate) =>
+        existsSync(path.join(candidate, "megadrum-kits")) &&
+        existsSync(path.join(candidate, "megadrum-kits-premium")),
+    ) ?? workspaceCandidates[0];
 const pieces = [
   "kick_l",
   "kick_r",
@@ -27,19 +39,19 @@ const kits = [
     slug: "sabian",
     source:
       process.env.MEGADRUM_SABIAN_SOURCE ??
-      path.resolve(repoRoot, "../megadrum-kits/4/megadrumkit"),
+      path.resolve(kitsWorkspace, "megadrum-kits/4/megadrumkit"),
     background: "background.png",
   },
   {
     slug: "green-metal",
     source:
       process.env.MEGADRUM_GREEN_METAL_SOURCE ??
-      path.resolve(repoRoot, "../megadrum-kits-premium/1017/megadrumkit"),
+      path.resolve(kitsWorkspace, "megadrum-kits-premium/1017/megadrumkit"),
     background:
       process.env.MEGADRUM_GREEN_METAL_BACKGROUND ??
       path.resolve(
         repoRoot,
-        "../../ChatGPT/Mega Drum New/output/backgrounds-cleaned/source-1017/background.png",
+        "../ChatGPT/Mega Drum New/output/backgrounds-cleaned/source-1017/background.png",
       ),
   },
 ];

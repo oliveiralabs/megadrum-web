@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { normalizeKit } from "./catalog-utils.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const sourceAssetDir = path.join(root, "public", "assets", "img");
 const sourceDir = path.join(root, "data", "source");
 const generatedDir = path.join(root, "data", "generated");
 const publicCatalogDir = path.join(root, "public", "catalog", "kits");
@@ -49,7 +50,7 @@ for (const file of [
   "megadrum-showcase.webp",
 ]) {
   await copyFile(
-    path.join(root, "assets", "img", file),
+    path.join(sourceAssetDir, file),
     path.join(publicBrandDir, file),
   );
 }
@@ -58,7 +59,7 @@ const publicStoreDir = path.join(publicBrandDir, "store");
 await mkdir(publicStoreDir, { recursive: true });
 for (const file of ["app-store-en.svg", "google-play-en.png", "google-play-pt-br.png"]) {
   await copyFile(
-    path.join(root, "assets", "img", "store", file),
+    path.join(sourceAssetDir, "store", file),
     path.join(publicStoreDir, file),
   );
 }
@@ -66,7 +67,7 @@ for (const file of ["app-store-en.svg", "google-play-en.png", "google-play-pt-br
 const publicPlayGalleryDir = path.join(publicBrandDir, "play-gallery");
 await rm(publicPlayGalleryDir, { recursive: true, force: true });
 await cp(
-  path.join(root, "assets", "img", "play-gallery"),
+  path.join(sourceAssetDir, "play-gallery"),
   publicPlayGalleryDir,
   { recursive: true },
 );

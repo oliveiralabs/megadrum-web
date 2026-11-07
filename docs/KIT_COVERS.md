@@ -32,14 +32,19 @@ the playable kit.
 
 ## Local prerequisites
 
-The script expects the website and both kit repositories to be siblings:
+The scripts automatically look for the kit repositories beside this checkout or
+inside the existing `oliveiralabs-github` workspace:
 
 ```text
-oliveiralabs-github/
-├── oliveiralabs.github.io/
+Documents/
+├── megadrum-web/
+└── oliveiralabs-github/
 ├── megadrum-kits/
 └── megadrum-kits-premium/
 ```
+
+If the repositories live elsewhere, set `MEGADRUM_KITS_WORKSPACE` to the
+directory containing `megadrum-kits` and `megadrum-kits-premium`.
 
 It also verifies the live Android sources before every audit or generation:
 
